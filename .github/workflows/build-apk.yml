@@ -30,7 +30,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip -q ATHLETE-90-v2.1.zip -d extracted
+          unzip -q ATHLETE-90-v2.3.zip -d extracted 
           test -f extracted/athlete-90/package.json
           cp -a extracted/athlete-90/. .
 
