@@ -30,7 +30,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip -q ATHLETE-90-v2.3.zip -d extracted 
+          unzip -q ATHLETE-90-v2.4.zip -d extracted 
           test -f extracted/athlete-90/package.json
           cp -a extracted/athlete-90/. .
 
@@ -54,6 +54,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ATHLETE-90-Android-APK
+          name: ATHLETE-90-v2.4-Android-APK 
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
